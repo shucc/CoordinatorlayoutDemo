@@ -62,10 +62,21 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <org.cchao.coordinatorlayoutdemo.CustomScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <org.cchao.coordinatorlayoutdemo.widget.StickyGridHeadersGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:numColumns="2" />
+
+    </org.cchao.coordinatorlayoutdemo.CustomScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
