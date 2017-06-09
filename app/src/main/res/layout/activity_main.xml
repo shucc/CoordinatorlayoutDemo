@@ -47,14 +47,26 @@
                 android:background="@android:color/black"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-                <TextView
-                    android:id="@+id/text_title"
-                    android:visibility="gone"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:textSize="16sp"
-                    android:text="我是标题"/>
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="我是标题"/>
+
+                    <ImageView
+                        android:id="@+id/img_expend"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                </RelativeLayout>
 
             </android.support.v7.widget.Toolbar>
 
